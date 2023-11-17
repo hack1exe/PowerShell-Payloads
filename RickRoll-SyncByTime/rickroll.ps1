@@ -47,7 +47,7 @@ public class Audio
     }
 }
 '@
-$t = '01/04/2023 11:00:00pm' # THIS IS TRIGGER
+$t = '01/01/2024 11:00:00pm' # THIS IS TRIGGER ON 1 of Jaunary, 2024, 23:00 (11:00pm)
 "Waiting..."
 while ((Get-Date) -lt (Get-Date -Date $t))
 {
@@ -56,6 +56,5 @@ while ((Get-Date) -lt (Get-Date -Date $t))
 [audio]::Mute = $false
 [audio]::Volume = 1
 Start-Process "https://youtu.be/dQw4w9WgXcQ"
-# Remove-Item $PSCommandPath -Force 
-
+# Remove-Item $PSCommandPath -Force # Uncomment this for "melt" after RickRolling
 
